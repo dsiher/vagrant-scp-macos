@@ -4,13 +4,13 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'vagrant/scp/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "vagrant-scp"
+  spec.name          = "vagrant-scp-macos"
   spec.version       = Vagrant::Scp::VERSION
-  spec.authors       = ["Luca Invernizzi"]
-  spec.email         = ["invernizzi.l@gmail.com"]
-  spec.description   = 'Copy files to a Vagrant VM via SCP.'
-  spec.summary       = 'Copy files to a Vagrant VM via SCP.'
-  spec.homepage      = "https://github.com/invernizzi/vagrant-scp"
+  spec.authors       = ["Luca Invernizzi", "David Siher"]
+  spec.email         = ["invernizzi.l@gmail.com", "david.siher@gmail.com"]
+  spec.description   = 'Copy files to a Vagrant VM via SCP. (Just adding -O to vagrant-scp for macOS usage.)'
+  spec.summary       = 'Copy files to a Vagrant VM via SCP. (Just adding -O to vagrant-scp for macOS usage.)'
+  spec.homepage      = "https://github.com/dsiher/vagrant-scp"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
